@@ -1,12 +1,6 @@
-/* ================================================
-   WOVO BAND — Main JS
-   ================================================ */
 (function () {
   'use strict';
 
-  /* ── Payment links ─────────────────────────────
-     Replace these with your Stripe Payment Links
-     or PayPal checkout URLs                       */
   const LINK_SINGLE = 'https://buy.stripe.com/7sYaEQ9FbdVqfyAfp7c7u07';
   const LINK_DUO    = 'https://buy.stripe.com/00w7sEcRn8B6aeg0udc7u08';
 
