@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wovo Band — Daily Wellness Tracking. No Monthly Fees.</title>
+  <meta name="description" content="Wovo Band tracks sleep, heart rate, HRV and daily activity. One-time price from €59. No subscription. No hidden fees. Tracked shipping included.">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Wovo Band — Sleep & Heart Rate Tracker. No Subscription.">
+  <meta property="og:description" content="Track sleep, heart rate and HRV. One-time price from €59. No subscription. Ever.">
+  <meta property="og:image" content="https://wovoband.com/images/wovo-product-hero.png">
+  <meta property="og:url" content="https://wovoband.com">
+  <meta property="og:site_name" content="Wovo Band">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wovo Band — Sleep & Heart Rate Tracker. No Subscription.">
+  <meta name="twitter:description" content="One price. No monthly fees. Tracked shipping included. 30-day returns.">
+  <link rel="canonical" href="https://wovoband.com/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23090909'/><text y='23' font-size='20' x='5'>⌚</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- META PIXEL -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){
+    n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','XXXXXXXXXXXXXXXXX');
+    fbq('track','PageView');
+    fbq('track','ViewContent',{content_name:'Wovo Band',content_ids:['wovo-band-single'],content_type:'product',value:59.00,currency:'EUR'});
+    (function(){
+      var p=new URLSearchParams(window.location.search),o=p.get('order');
+      if(o==='success-single') fbq('track','Purchase',{value:59.00,currency:'EUR',content_ids:['wovo-band-single'],content_type:'product'});
+      if(o==='success-duo')    fbq('track','Purchase',{value:99.00,currency:'EUR',content_ids:['wovo-band-duo'],content_type:'product'});
+    })();
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXXXX&ev=PageView&noscript=1"/></noscript>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="topbar">
+  <span data-k="topbar">📦 Tracked shipping on every order  •  30-day returns  •  Free companion app</span>
+  <div class="lang-btns">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="nl">NL</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">WOVO <span>BAND</span></div>
+  <a href="#pricing" class="nav-cta" data-k="nav_cta">Order Now — €59</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="eyebrow" data-k="hero_badge">No monthly subscription</p>
+    <h1>
+      <span data-k="hero_h1a">Daily wellness tracking.</span>
+      <span class="h1-accent" data-k="hero_h1b">Without the monthly bill.</span>
+    </h1>
+    <p class="hero-sub" data-k="hero_sub">Sleep, heart rate, HRV and activity — tracked from your wrist. Check your numbers each morning. No subscription, ever.</p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn-pri">
+        <span data-k="hero_cta">Order Now — €59</span>
+      </a>
+      <p class="btn-hint">
+        <span>🔒</span>
+        <span data-k="hero_cta_sub">Tracked EU shipping · 30-day returns · No subscription</span>
+      </p>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat">
+        <strong data-k="stat1_val">6</strong>
+        <span data-k="stat1_label">Metrics tracked</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <strong data-k="stat2_val">7 days</strong>
+        <span data-k="stat2_label">Battery per charge</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <strong data-k="stat3_val">€0</strong>
+        <span data-k="stat3_label">Monthly fee</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img src="images/wovo-product-hero.webp" class="hero-product-img" alt="Wovo Band — wellness tracker with no monthly fees">
+    </div>
+  </div>
+</section>
+
+<!-- BUILT FOR DAILY WEAR -->
+<section id="built">
+  <div class="built-grid">
+    <div class="built-visual reveal">
+      <img src="images/wovo-clean-waterproof.webp" alt="Wovo Band — IPX7 water resistant">
+    </div>
+    <div class="built-copy reveal reveal-d1">
+      <p class="eyebrow" data-k="built_badge">Built for daily wear</p>
+      <h2 data-k="built_h2">Worn round the clock.</h2>
+      <p data-k="built_p">Thin enough to forget it's there. Light enough to sleep in. IPX7 rated so you can wear it in the shower.</p>
+      <div class="specs-row">
+        <div class="spec-item">
+          <span class="spec-val">12<sub>mm</sub></span>
+          <span class="spec-label" data-k="built_s1">thin profile</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-val">28<sub>g</sub></span>
+          <span class="spec-label" data-k="built_s2">lightweight</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-val">7<sub>d</sub></span>
+          <span class="spec-label" data-k="built_s3">battery</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-val">IPX7</span>
+          <span class="spec-label" data-k="built_s4">water resistant</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT TRACKS -->
+<section id="features">
+  <div class="sec-header reveal">
+    <p class="eyebrow" data-k="feat_badge">What it tracks</p>
+    <h2 data-k="feat_h2">Track the basics that matter.</h2>
+    <p data-k="feat_sub">Six wellness metrics, one band. Collected automatically while you live your day.</p>
+  </div>
+  <div class="feat-layout">
+    <div class="feat-main reveal">
+      <div class="feat-main-img">
+        <img src="images/wovo-clean-sensors.webp" alt="Wovo Band optical sensor array">
+      </div>
+      <div class="feat-main-list">
+        <div class="feat-line">
+          <span class="feat-num">01</span>
+          <div>
+            <h3 data-k="feat1_title">Sleep Quality</h3>
+            <p data-k="feat1_desc">Duration, light, deep and REM stages tracked each night. See how you rested each morning.</p>
+          </div>
+        </div>
+        <div class="feat-line">
+          <span class="feat-num">02</span>
+          <div>
+            <h3 data-k="feat2_title">Heart Rate</h3>
+            <p data-k="feat2_desc">Continuous optical monitoring through day and night. No manual checks needed.</p>
+          </div>
+        </div>
+        <div class="feat-line">
+          <span class="feat-num">03</span>
+          <div>
+            <h3 data-k="feat3_title">HRV</h3>
+            <p data-k="feat3_desc">A daily readiness indicator based on heart rate variability — useful for tracking stress and recovery trends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feat-row">
+      <div class="feat-sm reveal">
+        <h4 data-k="feat4_title">Daily Activity</h4>
+        <p data-k="feat4_desc">Steps, calories and active time — logged automatically, no input needed.</p>
+      </div>
+      <div class="feat-sm reveal reveal-d1">
+        <h4 data-k="feat5_title">Blood Oxygen</h4>
+        <p data-k="feat5_desc">Spot-check SpO2 levels at any point in your day.</p>
+      </div>
+      <div class="feat-sm reveal reveal-d2">
+        <h4 data-k="feat6_title">Stress Indicator</h4>
+        <p data-k="feat6_desc">HRV-based daily overview to help you stay aware of your body's state.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT GALLERY -->
+<section id="product">
+  <div class="sec-header reveal">
+    <p class="eyebrow" data-k="prod_badge">The device</p>
+    <h2 data-k="prod_h2">Built for daily wear.</h2>
+    <p data-k="prod_sub">Slim enough to sleep in. IPX7 for the shower. 7-day battery — no daily charging.</p>
+  </div>
+  <div class="prod-grid">
+    <div class="prod-img reveal" id="prod-main-img">
+      <div class="prod-stage-wrap">
+        <img class="prod-stage-img" id="stage-img" src="images/wovo-clean-lifestyle.webp" alt="Wovo Band fitness tracker">
+      </div>
+    </div>
+    <div class="prod-list reveal reveal-d1">
+      <div class="prod-item">
+        <span class="prod-check">✓</span>
+        <p data-k="prod_f2">IPX7 water-resistant — shower-safe</p>
+      </div>
+      <div class="prod-item">
+        <span class="prod-check">✓</span>
+        <p data-k="prod_f3">7-day battery life per charge</p>
+      </div>
+      <div class="prod-item">
+        <span class="prod-check">✓</span>
+        <p data-k="prod_f1">Lightweight and comfortable for 24/7 wear</p>
+      </div>
+      <div class="prod-item">
+        <span class="prod-check">✓</span>
+        <p data-k="prod_f4">Silent vibration alerts (alarms &amp; notifications)</p>
+      </div>
+      <div class="prod-item">
+        <span class="prod-check">✓</span>
+        <p data-k="prod_f5">Free companion app — iOS &amp; Android</p>
+      </div>
+      <div class="prod-item">
+        <span class="prod-check">✓</span>
+        <p data-k="prod_f6">Screen-free design. Focused on sensing.</p>
+      </div>
+    </div>
+  </div>
+  <div class="prod-gallery reveal">
+    <div class="gallery-thumb active" data-target="images/wovo-clean-lifestyle.webp" data-alt="Wovo Band sleep tracking">
+      <img src="images/wovo-clean-lifestyle.webp" alt="Wovo Band sleep tracking" loading="lazy">
+      <span class="gallery-label">Sleep</span>
+    </div>
+    <div class="gallery-thumb" data-target="images/wovo-clean-waterproof.webp" data-alt="Wovo Band waterproof">
+      <img src="images/wovo-clean-waterproof.webp" alt="Wovo Band waterproof" loading="lazy">
+      <span class="gallery-label">IPX7</span>
+    </div>
+    <div class="gallery-thumb" data-target="images/wovo-product-hero.webp" data-alt="Wovo Band overview">
+      <img src="images/wovo-product-hero.webp" alt="Wovo Band overview" loading="lazy">
+      <span class="gallery-label">Overview</span>
+    </div>
+    <div class="gallery-thumb" data-target="images/wovo-clean-sensors.webp" data-alt="Wovo Band sensor detail">
+      <img src="images/wovo-clean-sensors.webp" alt="Wovo Band sensor array" loading="lazy">
+      <span class="gallery-label">Sensors</span>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="sec-header reveal">
+    <p class="eyebrow">Why people choose it</p>
+    <h2>Simple insights from your wrist.</h2>
+    <p>Six things tracked automatically. Nothing to log. No subscription to read your own data.</p>
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-item reveal">
+      <h3>Wear it all day</h3>
+      <p>At 22g with no screen, you barely notice it — during sleep, workouts or everyday life.</p>
+    </div>
+    <div class="benefit-item reveal reveal-d1">
+      <h3>Understand your sleep</h3>
+      <p>Duration, stages and a morning score. See patterns over days and weeks, not just last night.</p>
+    </div>
+    <div class="benefit-item reveal reveal-d2">
+      <h3>Check your heart rate</h3>
+      <p>Continuous monitoring all day and overnight. Trends you can actually act on.</p>
+    </div>
+    <div class="benefit-item reveal">
+      <h3>Track daily activity</h3>
+      <p>Steps, active time and calories — counted in the background, nothing to log manually.</p>
+    </div>
+    <div class="benefit-item reveal reveal-d1">
+      <h3>No monthly app plan</h3>
+      <p>One payment covers everything. Full access to your data, forever. No paywall, no renewal.</p>
+    </div>
+    <div class="benefit-item reveal reveal-d2">
+      <h3>Simple data, no distractions</h3>
+      <p>The app shows what matters. No streaks, badges or cluttered dashboards — just your numbers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LIFESTYLE -->
+<section id="lifestyle">
+  <div class="lifestyle-split">
+    <div class="lifestyle-img reveal">
+      <img src="images/wovo-clean-lifestyle.webp" alt="Wovo Band worn during daily activity">
+    </div>
+    <div class="lifestyle-copy reveal reveal-d1">
+      <p class="eyebrow">Track what you do</p>
+      <h2>Built for the way you actually live.</h2>
+      <p>Whether you're commuting, at the gym or sleeping, Wovo Band runs quietly in the background. Steps, active time, heart rate — collected automatically, no input needed.</p>
+      <ul class="lifestyle-list">
+        <li>Tracks continuously — no manual logging</li>
+        <li>IPX7 water resistant — shower-safe</li>
+        <li>20–30 day battery life per charge</li>
+        <li>Pairs with a free iOS &amp; Android app</li>
+      </ul>
+      <a href="#pricing" class="btn-pri">Order Now — €59</a>
+    </div>
+  </div>
+</section>
+
+<!-- EARLY FEEDBACK -->
+<section id="feedback">
+  <div class="sec-header reveal">
+    <p class="eyebrow">Early feedback</p>
+    <h2>What people think so far.</h2>
+    <p>From people who tried Wovo Band before we launched publicly. No stars, no scores — just what they said.</p>
+  </div>
+  <div class="fb-grid">
+    <div class="fb-card reveal">
+      <p class="fb-quote">"Simple setup and no monthly plan. That was the main reason I switched — I was tired of paying every month for a subscription wearable."</p>
+      <span class="fb-tag">Early user · Netherlands</span>
+    </div>
+    <div class="fb-card reveal reveal-d1">
+      <p class="fb-quote">"Comfortable enough to wear all day and sleep in. The sleep data is useful and straightforward — exactly what I needed."</p>
+      <span class="fb-tag">Early user · Belgium</span>
+    </div>
+    <div class="fb-card reveal reveal-d2">
+      <p class="fb-quote">"Clean design and the daily stats are easy to read. Good to see HRV trends without a screen on the band itself."</p>
+      <span class="fb-tag">Early user · France</span>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section id="comparison">
+  <div class="sec-header reveal">
+    <p class="eyebrow" data-k="comp_badge">Comparison</p>
+    <h2 data-k="comp_h2">How Wovo Band Compares</h2>
+    <p data-k="comp_sub">A straightforward look at how different types of wearables compare on features and total cost.</p>
+  </div>
+  <div class="comp-wrap reveal">
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th data-k="comp_feat_header" style="text-align:left;">Feature</th>
+          <th class="col-wovo" data-k="comp_col1">Wovo Band</th>
+          <th data-k="comp_col2">Subscription Bands</th>
+          <th data-k="comp_col3">Traditional Smartwatches</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td data-k="comp_r1">Sleep Tracking</td><td class="col-wovo">✅</td><td>✅</td><td data-k="comp_partial">Some models</td></tr>
+        <tr><td data-k="comp_r2">24/7 Heart Rate</td><td class="col-wovo">✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td data-k="comp_r3">HRV Insights</td><td class="col-wovo">✅</td><td>✅</td><td data-k="comp_partial">Some models</td></tr>
+        <tr><td data-k="comp_r4">Recovery Score</td><td class="col-wovo">✅</td><td>✅</td><td>❌</td></tr>
+        <tr><td data-k="comp_r5">Screen-free design</td><td class="col-wovo">✅</td><td>✅</td><td>❌</td></tr>
+        <tr class="price-row"><td data-k="comp_r6">Monthly Subscription</td><td class="col-wovo">❌ None</td><td class="sub-cost" data-k="comp_c2r6">€15–30 / mo</td><td data-k="comp_c3r6">—</td></tr>
+        <tr class="price-row"><td data-k="comp_r7">One-time Price</td><td class="col-wovo" data-k="comp_c1r7">€59</td><td style="color:var(--muted2);" data-k="comp_c2r7">Low or free*</td><td style="color:var(--muted2);" data-k="comp_c3r7">€150–500</td></tr>
+        <tr class="price-row"><td data-k="comp_r8">Year 1 Total Cost</td><td class="col-wovo" data-k="comp_c1r8">€59</td><td class="sub-cost" data-k="comp_c2r8">€180–360</td><td style="color:var(--muted2);" data-k="comp_c3r8">€150–500</td></tr>
+        <tr class="price-row"><td data-k="comp_r9">3-Year Total Cost</td><td class="col-wovo" data-k="comp_c1r9">€59</td><td class="sub-cost" data-k="comp_c2r9">€540–1,080</td><td style="color:var(--muted2);" data-k="comp_c3r9">€150–500</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="comp-note" data-k="comp_note">* Subscription bands are often low cost or free upfront, but charge a recurring monthly membership for the app.</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="sec-header reveal">
+    <p class="eyebrow" data-k="how_badge">Getting started</p>
+    <h2 data-k="how_h2">Up and running in minutes</h2>
+  </div>
+  <div class="how-grid">
+    <div class="how-step reveal">
+      <div class="how-num">01</div>
+      <h3 data-k="how1_title">Place your order</h3>
+      <p data-k="how1_desc">Complete checkout. Your order is processed within 1–2 business days and ships with a tracking number.</p>
+    </div>
+    <div class="how-step reveal reveal-d1">
+      <div class="how-num">02</div>
+      <h3 data-k="how2_title">Set up the app</h3>
+      <p data-k="how2_desc">Download the free companion app, pair your Wovo Band via Bluetooth — takes about 2 minutes.</p>
+    </div>
+    <div class="how-step reveal reveal-d2">
+      <div class="how-num">03</div>
+      <h3 data-k="how3_title">Check your data</h3>
+      <p data-k="how3_desc">Open the app each morning to see your sleep, heart rate trends and daily activity summary.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="sec-header reveal">
+    <p class="eyebrow" data-k="price_badge">One payment. Full access.</p>
+    <h2 data-k="price_h2">Clear, honest pricing</h2>
+    <p data-k="price_sub">One-time payment. No subscriptions. No hidden fees.</p>
+  </div>
+  <div class="price-grid">
+    <div class="price-card reveal">
+      <div class="price-head">
+        <span class="price-tag" data-k="p1_tag">Launch Price</span>
+        <h3 class="price-name" data-k="p1_name">Wovo Band</h3>
+        <p class="price-sub-txt" data-k="p1_sub">For yourself</p>
+      </div>
+      <div class="price-body">
+        <div class="price-amount">
+          <span class="price-was" data-k="p1_was">€79</span>
+          <span class="price-now" data-k="p1_now">€59</span>
+        </div>
+        <span class="price-save" data-k="p1_save">Save €20</span>
+        <ul class="price-includes">
+          <li data-k="p1_i1">1× Wovo Band device</li>
+          <li data-k="p1_i2">Magnetic charging cable</li>
+          <li data-k="p1_i3">Replacement band</li>
+          <li data-k="p1_i4">Free companion app</li>
+          <li data-k="p1_i5">Tracked shipping included</li>
+          <li data-k="p1_i6">30-day return policy</li>
+        </ul>
+        <button class="btn-buy" data-buy="single" data-k="p1_cta">Order Single — €59</button>
+        <p class="buy-micro" data-k="price_micro">Secure checkout · Tracked shipping included</p>
+      </div>
+    </div>
+    <div class="price-card featured reveal reveal-d1">
+      <div class="price-head">
+        <span class="price-tag" data-k="p2_tag">Best Value</span>
+        <h3 class="price-name" data-k="p2_name">Wovo Band Duo</h3>
+        <p class="price-sub-txt" data-k="p2_sub">For you and someone else</p>
+      </div>
+      <div class="price-body">
+        <div class="price-amount">
+          <span class="price-was" data-k="p2_was">€158</span>
+          <span class="price-now" data-k="p2_now">€99</span>
+        </div>
+        <span class="price-save" data-k="p2_save">Save €59</span>
+        <p class="price-each" data-k="p2_each">€49.50 per band</p>
+        <ul class="price-includes">
+          <li data-k="p2_i1">2× Wovo Band devices</li>
+          <li data-k="p2_i2">2× Magnetic charging cables</li>
+          <li data-k="p2_i3">2× Replacement bands</li>
+          <li data-k="p2_i4">Free companion app</li>
+          <li data-k="p2_i5">Tracked shipping included</li>
+          <li data-k="p2_i6">30-day return policy</li>
+        </ul>
+        <button class="btn-buy" data-buy="duo" data-k="p2_cta">Order Duo Pack — €99</button>
+        <p class="buy-micro" data-k="price_micro">Secure checkout · Tracked shipping included</p>
+      </div>
+    </div>
+  </div>
+  <p class="price-note" data-k="price_note">Secure checkout · Visa and Mastercard accepted</p>
+</section>
+
+<!-- SHIPPING -->
+<section id="shipping">
+  <div class="sec-header reveal">
+    <p class="eyebrow" data-k="ship_badge">Shipping</p>
+    <h2 data-k="ship_h2">Delivery information</h2>
+  </div>
+  <div class="ship-note reveal" data-k="ship_note">Every order includes tracked shipping. You will receive a tracking number by email once dispatched.</div>
+  <div class="ship-grid">
+    <div class="ship-item reveal">
+      <div class="ship-ico">⏱️</div>
+      <h4 data-k="sh1_title">Processing</h4>
+      <p data-k="sh1_desc">Orders are processed within 1–2 business days of purchase.</p>
+    </div>
+    <div class="ship-item reveal reveal-d1">
+      <div class="ship-ico">🚚</div>
+      <h4 data-k="sh2_title">Delivery time</h4>
+      <p data-k="sh2_desc">Estimated 8–15 business days to EU destinations.</p>
+    </div>
+    <div class="ship-item reveal reveal-d2">
+      <div class="ship-ico">📍</div>
+      <h4 data-k="sh3_title">Tracking</h4>
+      <p data-k="sh3_desc">Tracking link sent to your email after dispatch. Follow your parcel anytime.</p>
+    </div>
+    <div class="ship-item reveal reveal-d3">
+      <div class="ship-ico">🇪🇺</div>
+      <h4 data-k="sh4_title">Coverage</h4>
+      <p data-k="sh4_desc">We currently ship to all EU member countries.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RETURNS -->
+<section id="returns">
+  <div class="ret-card reveal">
+    <div class="ret-ico">🔄</div>
+    <div>
+      <h2 data-k="ret_h2">30-day return policy</h2>
+      <p data-k="ret_body">Changed your mind or received a faulty item? You can return your Wovo Band within 30 days of delivery for a full refund. Items must be in original condition and packaging. To start a return, contact us at hello@wovoband.com — we'll handle the rest. Refunds are processed within 5–7 business days of receiving the return.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="sec-header reveal">
+    <p class="eyebrow" data-k="faq_badge">FAQ</p>
+    <h2 data-k="faq_h2">Common questions</h2>
+  </div>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-q"><span data-k="faq1_q">Is Wovo Band waterproof?</span><span class="faq-arr">+</span></button>
+      <div class="faq-a" data-k="faq1_a">Wovo Band is IPX7 water-resistant, meaning it handles sweat, rain and brief submersion (up to 1 metre for 30 minutes). It's safe to wear in the shower. It is not designed for swimming laps or deep-water activities.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-k="faq2_q">Is there a monthly fee for the app?</span><span class="faq-arr">+</span></button>
+      <div class="faq-a" data-k="faq2_a">No. The companion app is completely free. There are no subscriptions, membership fees or recurring charges of any kind — your one-time purchase covers everything.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-k="faq3_q">How long does the battery last?</span><span class="faq-arr">+</span></button>
+      <div class="faq-a" data-k="faq3_a">Up to 7 days on a single charge, depending on how often the sensors are active.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-k="faq4_q">How long will delivery take?</span><span class="faq-arr">+</span></button>
+      <div class="faq-a" data-k="faq4_a">Orders are processed in 1–2 business days and typically arrive within 8–15 business days for EU destinations. You will receive a tracking number by email.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-k="faq5_q">How do I return my order?</span><span class="faq-arr">+</span></button>
+      <div class="faq-a" data-k="faq5_a">Send an email to hello@wovoband.com within 30 days of receiving your order. We'll send you return instructions. Items must be in their original condition. Refunds are issued within 5–7 business days of receiving the return.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-k="faq6_q">Is the app available on iOS and Android?</span><span class="faq-arr">+</span></button>
+      <div class="faq-a" data-k="faq6_a">Yes. The companion app is available for both iOS and Android.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-k="faq7_q">What's included in the box?</span><span class="faq-arr">+</span></button>
+      <div class="faq-a" data-k="faq7_a">One Wovo Band device, a magnetic charging cable and one replacement band. The companion app is downloaded separately from the App Store or Google Play.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="final">
+  <div class="reveal">
+    <h2 data-k="final_h2">Track what matters.</h2>
+    <p data-k="final_sub">Sleep, heart rate, HRV and activity — clearly tracked, with no monthly fees.</p>
+  </div>
+  <div class="final-ctas reveal">
+    <a href="#pricing" class="btn-pri">
+      <span data-k="final_cta">Order Wovo Band — €59</span>
+    </a>
+    <p class="btn-hint">
+      <span>🔒</span>
+      <span data-k="final_cta_sub">Tracked shipping · 30-day returns · No subscription. Ever.</span>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-main">
+    <div class="foot-brand">
+      <div class="logo">WOVO <span>BAND</span></div>
+      <p data-k="foot_tag">Simple wellness tracking. One payment.</p>
+      <p class="foot-email">hello@wovoband.com</p>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h5>Product</h5>
+        <a href="#features">Features</a>
+        <a href="#product">Gallery</a>
+        <a href="#comparison">Compare</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="foot-col">
+        <h5>Support</h5>
+        <a href="mailto:hello@wovoband.com" data-k="foot_contact">Contact</a>
+        <a href="#shipping" data-k="foot_shipping">Shipping Info</a>
+        <a href="#returns" data-k="foot_returns">Returns</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="/privacy.html" data-k="foot_privacy">Privacy Policy</a>
+        <a href="/terms.html" data-k="foot_terms">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span data-k="foot_copy">© 2026 Wovo Band. All rights reserved.</span>
+    <div class="foot-pay">
+      <span>Visa</span>
+      <span>Mastercard</span>
+    </div>
+  </div>
+  <p class="foot-disclaimer">Wovo Band is a consumer wellness product. It is not a medical device and is not intended to diagnose, treat, cure or prevent any disease or medical condition.</p>
+</footer>
+
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

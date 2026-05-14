@@ -1,0 +1,11 @@
+.vercel
+node_modules/
+.env
+.env.local
+.env.production
+*.env
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db

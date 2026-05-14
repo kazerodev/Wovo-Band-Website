@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700">
+  <defs>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8956B"/>
+      <stop offset="50%" stop-color="#B8845A"/>
+      <stop offset="100%" stop-color="#A07040"/>
+    </linearGradient>
+    <linearGradient id="wrist-edge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.35"/>
+      <stop offset="15%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="wband-face" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#252540"/>
+      <stop offset="50%" stop-color="#18182E"/>
+      <stop offset="100%" stop-color="#0E0E1C"/>
+    </linearGradient>
+    <linearGradient id="wstrap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#131322"/>
+      <stop offset="50%" stop-color="#1A1A30"/>
+      <stop offset="100%" stop-color="#131322"/>
+    </linearGradient>
+    <radialGradient id="wled" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#2DD4BF"/>
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="wled-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="wdrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="wglow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="floor-sh" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="400" cy="625" rx="155" ry="22" fill="url(#floor-sh)"/>
+
+  <g transform="translate(400,370) rotate(-15)">
+    <!-- Arm -->
+    <rect x="-92" y="-195" width="184" height="430" rx="88" fill="url(#skin)" filter="url(#wdrop)"/>
+    <rect x="-92" y="-195" width="184" height="430" rx="88" fill="url(#wrist-edge)"/>
+    <ellipse cx="0" cy="-110" rx="46" ry="28" fill="white" fill-opacity="0.07"/>
+    <path d="M -56 22 Q 0 28 56 22" fill="none" stroke="#000" stroke-width="1" stroke-opacity="0.1"/>
+    <line x1="-14" y1="-90" x2="-16" y2="95" stroke="#000" stroke-width="0.7" stroke-opacity="0.06"/>
+    <line x1="14"  y1="-90" x2="16"  y2="95" stroke="#000" stroke-width="0.7" stroke-opacity="0.06"/>
+
+    <!-- Strap top -->
+    <rect x="-36" y="-162" width="72" height="98" rx="13" fill="url(#wstrap)"/>
+    <rect x="-36" y="-162" width="72" height="4" rx="2" fill="white" fill-opacity="0.05"/>
+
+    <!-- Strap bottom -->
+    <rect x="-36" y="66" width="72" height="92" rx="13" fill="url(#wstrap)"/>
+    <rect x="-26" y="128" width="52" height="9" rx="4.5" fill="#0A0A14" stroke="#1E1E36" stroke-width="0.6"/>
+    <rect x="-3" y="124" width="6" height="17" rx="3" fill="#1A1A2E"/>
+
+    <!-- Band body -->
+    <rect x="-92" y="-78" width="184" height="148" rx="21" fill="url(#wband-face)" filter="url(#wdrop)"/>
+    <rect x="-92" y="-78" width="184" height="148" rx="21" fill="none" stroke="#2DD4BF" stroke-width="0.9" stroke-opacity="0.25"/>
+    <rect x="-90" y="-77" width="180" height="46" rx="19" fill="white" fill-opacity="0.04"/>
+    <rect x="-92" y="-56" width="3" height="108" rx="1.5" fill="white" fill-opacity="0.06"/>
+
+    <!-- Sensor window -->
+    <rect x="-38" y="-38" width="76" height="54" rx="10" fill="#08080F" stroke="rgba(45,212,191,0.18)" stroke-width="0.8"/>
+    <circle cx="0" cy="-11" r="30" fill="#2DD4BF" fill-opacity="0.08"/>
+
+    <!-- LEDs -->
+    <circle cx="-13" cy="-11" r="5.5" fill="url(#wled)" filter="url(#wglow)" opacity="0.7"/>
+    <circle cx="0"   cy="-11" r="6.5" fill="url(#wled)" filter="url(#wglow)"/>
+    <circle cx="13"  cy="-11" r="5.5" fill="url(#wled)" filter="url(#wglow)" opacity="0.55"/>
+    <circle cx="-13" cy="-11" r="17" fill="url(#wled-glow)" opacity="0.6"/>
+    <circle cx="0"   cy="-11" r="21" fill="url(#wled-glow)"/>
+    <circle cx="13"  cy="-11" r="17" fill="url(#wled-glow)" opacity="0.45"/>
+
+    <text x="0" y="48" text-anchor="middle" font-family="Inter,sans-serif" font-size="7.5" font-weight="800" letter-spacing="0.28em" fill="#2DD4BF" fill-opacity="0.3">WOVO</text>
+  </g>
+
+  <!-- Chip HR -->
+  <g transform="translate(558,185)" filter="drop-shadow(0 8px 18px rgba(0,0,0,0.55))">
+    <rect width="140" height="50" rx="11" fill="#13132A" stroke="#2DD4BF" stroke-width="0.8" stroke-opacity="0.5"/>
+    <circle cx="19" cy="25" r="5" fill="#2DD4BF"/>
+    <text x="34" y="19" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#2DD4BF" fill-opacity="0.75" letter-spacing="0.1em">HEART RATE</text>
+    <text x="34" y="36" font-family="Inter,sans-serif" font-size="15" font-weight="900" fill="#F0F0F8">72 bpm</text>
+  </g>
+
+  <!-- Chip Recovery -->
+  <g transform="translate(96,440)" filter="drop-shadow(0 8px 18px rgba(0,0,0,0.55))">
+    <rect width="140" height="50" rx="11" fill="#13132A" stroke="#818CF8" stroke-width="0.8" stroke-opacity="0.5"/>
+    <circle cx="19" cy="25" r="5" fill="#818CF8"/>
+    <text x="34" y="19" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#818CF8" fill-opacity="0.75" letter-spacing="0.1em">RECOVERY</text>
+    <text x="34" y="36" font-family="Inter,sans-serif" font-size="15" font-weight="900" fill="#F0F0F8">78%</text>
+  </g>
+</svg>
